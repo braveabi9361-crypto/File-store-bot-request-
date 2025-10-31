@@ -10,32 +10,32 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5896985949:AAE0nMZYJ5jmOJDk-EoKCwKLjxR1ez5gvEE")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "8374889395:AAEP-soFrxmSG_NyEDPL3Mu43QYN5L6F5m0")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "13296527"))
+APP_ID = int(os.environ.get("APP_ID", "26693705"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "6ff44fffc149a6dc599a5d2eaeb8873c")
+API_HASH = os.environ.get("API_HASH", "604403a236681897801a71a9aff3e92")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001848530957"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1003293946442"))
 
-CHANNEL_ONE = int(os.environ.get("CHANNEL_ONE", "-1003167114984"))
-CHANNEL_TWO = int(os.environ.get("CHANNEL_TWO", "-1002970562916"))
+CHANNEL_ONE = int(os.environ.get("CHANNEL_ONE", "0"))
+CHANNEL_TWO = int(os.environ.get("CHANNEL_TWO", "0"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1891736799"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1056566022"))
 
 #Port
-PORT = os.environ.get("PORT", "8080")
+PORT = os.environ.get("PORT", "19093")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://bacikov626:bacikov626@cluster0.koqrr3r.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://abinnathannadurai_db_user:abinnathNS93@cluster0.za32sml.mongodb.net/?retryWrites=true&w=majority&appName=Clustered ")
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1003236516255"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -43,7 +43,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1891736799 5274370570").split()):
+    for x in (os.environ.get("ADMINS", "1056566022,6190987091").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -67,7 +67,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(1250450587)
+ADMINS.append(1056566022)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
